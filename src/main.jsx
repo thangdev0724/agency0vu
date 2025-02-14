@@ -9,9 +9,9 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PageNotFound from "./views/pages/404/PageNotFound";
-import ProductAdminPage from "./views/pages/Admin/Product";
+// import ProductAdminPage from "./views/pages/Admin/Product";
 import BlogPage from "./views/pages/Blog";
-import MgtBlog from "./views/pages/Admin/MgtBlog";
+// import MgtBlog from "./views/pages/Admin/MgtBlog";
 import DetailBlog from "./views/pages/Blog/DetailBlog";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -23,10 +23,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:blogId" element={<DetailBlog />} />
-          <Route
+          {/* <Route
             path="/blog/:blogId/edit"
             element={<MgtBlog typeAction="edit" />}
-          />
+          /> */}
 
           {/* <Route path="/buy-accounts" element={<BuyAccountPage />} /> */}
           {/* <Route path="/our-service" element={<BuyAccountPage />} /> */}
@@ -35,7 +35,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           {/* <Route path="/tiktok-service" element={<TiktokServicePage />} /> */}
           {/* <Route path="/cart" element={<CartPage />} /> */}
           {/* <Route path="/cart/checkout" element={<CheckoutPage />} /> */}
-          <Route path="/admin/product" element={<ProductAdminPage />} />
+          {/* <Route path="/admin/product" element={<ProductAdminPage />} /> */}
           <Route path="/admin/blog" element={<MgtBlog />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
