@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-about,
+.gradient-feedback {
+  background: radial-gradient(
+    116.18% 118% at 50% 100%,
+    rgba(99, 102, 241, 0.1) 0,
+    rgba(218, 70, 239, 0.05) 41.83%,
+    rgba(241, 244, 253, 0.07) 82.52%
+  );
+}
+
+.contact-telegram img {
+  transition: all 0.3s ease;
+}
+
+.contact-telegram:hover img {
+  scale: 1.1;
+}
+
+.padding-top-content {
+  padding: 40px 60px 60px 40px;
+}
+
+.padding-parent-contact {
+  padding: 20px 2.62rem;
+}
+
+.padding-whatsapp {
+  padding: 1.5rem 2.93rem;
+}
+
+.telegram:hover {
+  color: #fff !important;
+}
+
+.contact-telegram:hover svg {
+  fill: #fff;
+}
+
+.contact-telegram:hover span {
+  color: #fff;
+}
+
+.top-about {
+  background-image: url(https://lucagency.net/wp-content/uploads/2022/11/about-us-06.png);
+  background-position: 50%;
+  background-size: cover;
+  height: 636px;
+  width: 100%;
+}
+
+.font-time-news {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.padding-thead {
+  padding: 12px 24px;
+}
+
+.messenger {
+  background: #2563eb;
+  border-radius: 50%;
+  bottom: 20px;
+  cursor: pointer;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 50px;
+  z-index: 100;
+}
+
+.messenger svg {
+  margin-left: 14px;
+  margin-top: 14px;
+}
+
+.optionsss {
+  bottom: 30px;
+  display: none;
+  right: 10px;
+  position: absolute;
+}
+
+.messenger:hover .optionsss {
+  display: block;
+}
+
+.homeBanner {
+  position: relative;
+}
+
+.ant-space-item {
+  flex: 0 0 32.333333%;
+  padding: 15px;
+}
+
+.homeBanner img:last-child {
+  position: absolute;
+  left: 150px;
+  top: 150px;
+  border-radius: 10px;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card--image {
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-size: cover;
+  padding-bottom: 57%;
+}
+.card:hover .card--image {
+  transform: scale(1.1);
+}
+
+.card--link:hover {
+  color: #2563eb;
+}
+@media only screen and (max-width: 992px) {
+  .ant-space-item {
+    flex: 0 0 30.333333%;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .padding-top-content {
+    padding: 40px 10px 60px;
+  }
+
+  .mobile-style {
+    padding-top: 30px !important;
+  }
+}
+
+.ck-content {
+  min-height: 350px;
+  max-height: 350px;
+}
+
+.ck.ck-editor__editable_inline {
+  padding: 0 15px !important;
+}
+
+.ck-content p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.ck-content h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.ck-content h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.ck-content h3 {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.ck-content b {
+  font-weight: 500;
+}
+
+.ck-content a {
+  color: #2563eb;
+}
+
+.ck-view {
+  height: auto !important;
+  max-height: max-content;
+  min-height: min-content;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
